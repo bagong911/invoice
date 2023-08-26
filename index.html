@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .invoice {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .invoice-details {
+            margin-bottom: 20px;
+        }
+        .invoice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .invoice-table th,
+        .invoice-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        .invoice-total {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice">
+        <div class="invoice-header">
+            <h1>Invoice</h1>
+        </div>
+        <div class="invoice-details">
+            <p>Invoice Number: INV-20230826-123</p>
+            <p>Date: August 26, 2023</p>
+        </div>
+        <table class="invoice-table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Firmware Seagate ST2000DM008 FW:0001</td>
+                    <td>1</td>
+                    <td>$18.99</td>
+                    <td>$18.99</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>1</td>
+                    <td>$00.00</td>
+                    <td>$00.00</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="invoice-total">Total:</td>
+                    <td>$18.99</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Thank you for your business!</p>
+    </div>
+</body>
+</html>
